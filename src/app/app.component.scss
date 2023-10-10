@@ -1,0 +1,19 @@
+.display {
+  height: 100vh;
+  border: 2px dashed #000;
+  display: flex;
+  justify-content: center;
+}
+
+.photo {
+  width: 75%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.custm-btns {
+  padding: 0px;
+  margin: 0px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+}
