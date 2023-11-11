@@ -22,5 +22,6 @@ export class AppComponent {
   /** Header Data selected  */
   headerData(headerDetails: any) {
     this.headerDetails = headerDetails;
+    console.log(this.headerDetails, 'headerDetails');
   }
 }

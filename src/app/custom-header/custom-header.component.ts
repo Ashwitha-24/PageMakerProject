@@ -19,7 +19,7 @@ export class CustomHeaderComponent {
     {
       'image': 'header_3.png',
       'editType': 'text_edit',
-      'html': "<div class=mt-3><span class=channel_name>Channel Name</span><br><span class='channel_description'>इंदरगढ़ &gt; दतिया &gt; ग्वालियर &gt; भिंड &gt; मोरेना </span></div>"
+      'html': '<div class=row><div class=col-12><div class=mt-4><span class="d-flex justify-content-center fw-bold fs-1 lh-1">Channel Name</span><span class="d-flex justify-content-center mt-1">इंदरगढ़ > दतिया > ग्वालियर > भिंड > मोरेना </span></div></div></div>'
     },
     {
       'image': 'header_4.png',
