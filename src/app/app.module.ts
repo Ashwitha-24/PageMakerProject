@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CustomHeaderComponent } from './custom-header/custom-header.component';
+import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
+import { CustomFooterComponent } from './custom-footer/custom-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CustomHeaderComponent
+    CustomHeaderComponent,
+    CustomLayoutComponent,
+    CustomFooterComponent
   ],
   imports: [
     BrowserModule,
