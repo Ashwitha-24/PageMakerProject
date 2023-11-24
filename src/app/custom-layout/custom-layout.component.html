@@ -1,15 +1,26 @@
-<div class="">
-    <div class="layout_selection">
-        <span>
+<div class="layout_selection">
+    <div class="row g-2">
+        <span class="ps-4 fw-normal">
             Add New Layout
         </span>
-        <div class="layout_border">
-            <div class="layout_card">
-
+        <div class="col-3" *ngFor="let layout of layoutData">
+            <div class="layout_border p-1 m-1" style="cursor: pointer;">
+                <div class="layout_card d-flex">
+                    <div *ngFor="let column of layout.columns" class="col-{{column.label}}"
+                        style="padding: 0.10rem !important;">
+                        <div class="bg-dark text-white text-center p-2">
+                            {{column.label}}
+                        </div>
+                        <!-- <span class="m-1 bg-dark text-white text-center">{{column.label}}</span> -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="custom_layout">
-        
+    <hr>
+    <div class="row">
+        <span class="ps-4 fw-normal">
+           Selected Layout
+        </span>
     </div>
 </div>
