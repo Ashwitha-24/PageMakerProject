@@ -17,6 +17,14 @@ export class CustomHeaderComponent {
 
   header_images = [
     {
+      'image': 'header_1.png',
+      'editType': 'text_edit'
+    },
+    {
+      'image': 'header_2.png',
+      'editType': 'text_edit'
+    },
+    {
       'image': 'header_3.png',
       'editType': 'text_edit',
       'html': '<div class=row><div class=col-12><div class=mt-4><span class="d-flex justify-content-center fw-bold fs-1 lh-1">Channel Name</span><span class="d-flex justify-content-center mt-1">इंदरगढ़ > दतिया > ग्वालियर > भिंड > मोरेना </span></div></div></div>'
@@ -32,15 +40,11 @@ export class CustomHeaderComponent {
     {
       'image': 'header_6.png',
       'editType': 'text_edit'
-    },
-    {
-      'image': 'header_1.png',
-      'editType': 'text_edit'
-    },
-    {
-      'image': 'header_2.png',
-      'editType': 'text_edit'
     }
+  ];
+
+  other_header_images = [
+
   ];
 
   /** Add Header Image to Page */

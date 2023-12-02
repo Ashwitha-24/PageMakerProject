@@ -10,7 +10,10 @@ export class HomeComponent {
   headerImage: any;
   sectionName: any
   headerImagePrefix = "assets/front_page_header/";
+  advertiseImagePrefix = "assets/advertise/"
   gandhijiImage = "gandhiji.png";
+  advertise_520_260 = "advertise_520_260.png";
+  newspaper_dummy_header = "newspaper_dummy_header.png";
   subi = "subi.png";
   headerDetails: any;
 
@@ -21,6 +24,5 @@ export class HomeComponent {
   /** Header Data selected  */
   headerData(headerDetails: any) {
     this.headerDetails = headerDetails;
-    console.log(this.headerDetails, 'headerDetails');
   }
 }
