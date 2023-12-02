@@ -8,13 +8,17 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
 import { CustomHeaderComponent } from './custom-header/custom-header.component';
 import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
 import { CustomFooterComponent } from './custom-footer/custom-footer.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomHeaderComponent,
     CustomLayoutComponent,
-    CustomFooterComponent
+    CustomFooterComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

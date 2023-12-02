@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-5">
+      <div class="display">
+        <div class="photo mt-2" style="font-family: 'Akshar', sans-serif;">
+          <!-- <div [innerHTML]="headerDetails?.html">
+          </div> -->
+          <div class="row mt-3 align-items-center">
+            <div class="col-3 d-flex justify-content-center">
+              <img class="img-fluid" [src]="headerImagePrefix + gandhijiImage" style="height: 80px;">
+            </div>
+            <div class="col-6 text-center">
+              <span class="d-flex justify-content-center fw-bold fs-1 lh-1 text-nowrap text-danger">Channel Name</span>
+              <span class="d-flex justify-content-center mt-1">
+                इंदरगढ़ &gt; दतिया &gt; ग्वालियर &gt; भिंड &gt; मोरेना 
+              </span>
+            </div>
+            <div class="col-3">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-7">
+      <div class="custm-btns mt-2">
+        <tabset class="btn-selection">
+          <tab heading="Edit">
+            Tabs component in Angular ngx bootstrap GeeksforGeeks
+          </tab>
+          <tab heading="Header">
+            <custom-header (headerData)="headerData($event)"></custom-header>
+          </tab>
+          <tab heading="Sub Header">
+            Tabs component in Angular ngx bootstrap GeeksforGeeks2
+          </tab>
+          <tab heading="Layout">
+            <custom-layout></custom-layout>
+          </tab>
+          <tab heading="Footer">
+            <custom-footer></custom-footer>
+          </tab>
+          <tab heading="Page">
+            Tabs component in Angular ngx bootstrap GeeksforGeeks2
+          </tab>
+        </tabset>
+      </div>
+    </div>
+  </div>

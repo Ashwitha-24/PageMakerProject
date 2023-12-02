@@ -1,17 +1,16 @@
 <div class="layout_selection">
     <div class="row g-2">
-        <span class="ps-4 fw-normal">
+        <span class="ps-2 fs-6 fw-bold">
             Add New Layout
         </span>
         <div class="col-3" *ngFor="let layout of layoutData">
             <div class="layout_border p-1 m-1" style="cursor: pointer;">
                 <div class="layout_card d-flex">
                     <div *ngFor="let column of layout.columns" class="col-{{column.label}}"
-                        style="padding: 0.10rem !important;">
+                        (click)="selectLayout(layout)" style="padding: 0.10rem !important;">
                         <div class="bg-dark text-white text-center p-2">
                             {{column.label}}
                         </div>
-                        <!-- <span class="m-1 bg-dark text-white text-center">{{column.label}}</span> -->
                     </div>
                 </div>
             </div>
@@ -19,8 +18,25 @@
     </div>
     <hr>
     <div class="row">
-        <span class="ps-4 fw-normal">
-           Selected Layout
+        <span class="fs-6 fw-bold">
+            Selected Layout
         </span>
+        <div class="col-12" *ngFor="let layout of selectedLayouts">
+            <div class="selected-layout m-2 p-2 fs-5">
+                <span>
+                    Row: {{layout.id}}
+                </span>
+                <div class="layout_border p-1 m-1" style="cursor: pointer;">
+                    <div class="layout_card d-flex">
+                        <div *ngFor="let column of layout.columns" class="col-{{column.label}}"
+                            (click)="selectLayout(layout.id)" style="padding: 0.10rem !important;">
+                            <div class="bg-dark text-white text-center p-2">
+                                {{column.label}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

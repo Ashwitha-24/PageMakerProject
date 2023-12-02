@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./custom-layout.component.scss']
 })
 export class CustomLayoutComponent {
+
+  // Define an array to hold objects
+  selectedLayouts: { id: number, columns: [{ label: string }] }[] = [];
   layoutData: any = [
     {
       id: 1,
@@ -139,4 +142,8 @@ export class CustomLayoutComponent {
       ]
     }
   ];
+
+  selectLayout(selectedColumns: any) {
+    this.selectedLayouts.push(selectedColumns);
+  }
 }
