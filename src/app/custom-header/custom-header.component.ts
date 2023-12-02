@@ -13,6 +13,7 @@ export class CustomHeaderComponent {
     this.activeTabIndex = index;
   }
   headerImagePrefix = "assets/front_page_header/";
+  otherHeaderImagePrefix = "assets/front_page_other_header/";
   dynamicHtml: any;
 
   header_images = [
@@ -44,7 +45,48 @@ export class CustomHeaderComponent {
   ];
 
   other_header_images = [
-
+    {
+      'image': 'other_header_1.png'
+    },
+    {
+      'image': 'other_header_2.png'
+    },
+    {
+      'image': 'other_header_3.png'
+    },
+    {
+      'image': 'other_header_4.png'
+    },
+    {
+      'image': 'other_header_5.png'
+    },
+    {
+      'image': 'other_header_6.png'
+    },
+    {
+      'image': 'other_header_7.png'
+    },
+    {
+      'image': 'other_header_8.png'
+    },
+    {
+      'image': 'other_header_9.png'
+    },
+    {
+      'image': 'other_header_10.png'
+    },
+    {
+      'image': 'other_header_11.png'
+    },
+    {
+      'image': 'other_header_12.png'
+    },
+    {
+      'image': 'other_header_13.png'
+    },
+    {
+      'image': 'other_header_14.png'
+    }
   ];
 
   /** Add Header Image to Page */
