@@ -19,8 +19,13 @@
     <ng-container>
       <div class="tab-pane" [class.active]="1 === activeTabIndex">
         <div class="row">
+          <div (click)="addHeaderImage('select_image')" class="col-6 d-flex align-items-center justify-content-center">
+            <div class="mt-2 w-100" style="border: 2px solid; height: 80%;">
+              <span class="fw-bold justify-content-center align-items-center">Full Image</span>
+            </div>
+          </div>
           <div class="col-6" *ngFor="let header of header_images">
-            <img class="img-responsive w-100 mt-2 header_image" [src]="headerImagePrefix + header?.image" (click)="addHeaderImage(header?.html)"/>
+            <img class="img-responsive w-100 mt-2 header_image" [src]="headerImagePrefix + header?.image" (click)="addHeaderImage(header)"/>
           </div>
         </div>
       </div>

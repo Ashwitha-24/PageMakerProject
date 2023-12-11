@@ -16,6 +16,7 @@ export class HomeComponent {
   newspaper_dummy_header = "newspaper_dummy_header.png";
   subi = "subi.png";
   headerDetails: any;
+  selectImage: boolean = false;
 
   section(sectionName: any = null) {
     this.sectionName = sectionName;
@@ -23,6 +24,7 @@ export class HomeComponent {
 
   /** Header Data selected  */
   headerData(headerDetails: any) {
-    this.headerDetails = headerDetails;
+    this.headerDetails = headerDetails.headerData;
+    this.selectImage = (this.headerDetails == 'select_image') ? true : false;
   }
 }

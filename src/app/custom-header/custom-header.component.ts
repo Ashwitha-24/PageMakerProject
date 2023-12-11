@@ -19,11 +19,13 @@ export class CustomHeaderComponent {
   header_images = [
     {
       'image': 'header_1.png',
-      'editType': 'text_edit'
+      'editType': 'text_edit',
+      'id': 'header_1'
     },
     {
       'image': 'header_2.png',
-      'editType': 'text_edit'
+      'editType': 'text_edit',
+      'id': 'header_2'
     },
     {
       'image': 'header_3.png',
@@ -90,8 +92,8 @@ export class CustomHeaderComponent {
   ];
 
   /** Add Header Image to Page */
-  addHeaderImage(html: any) {
-    this.headerData.emit({ html: html });
+  addHeaderImage(headerData: any) {
+    this.headerData.emit({ headerData: headerData });
   }
 
 }

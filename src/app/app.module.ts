@@ -10,6 +10,7 @@ import { CustomLayoutComponent } from './custom-layout/custom-layout.component';
 import { CustomFooterComponent } from './custom-footer/custom-footer.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { CustomEditorComponent } from './custom-editor/custom-editor.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeComponent } from './home/home.component';
     CustomLayoutComponent,
     CustomFooterComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CustomEditorComponent
   ],
   imports: [
     BrowserModule,
