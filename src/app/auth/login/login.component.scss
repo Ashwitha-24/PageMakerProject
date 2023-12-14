@@ -1,0 +1,51 @@
+.header-text {
+	background-color: #117BA3;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+input {
+	border: 1.25px solid #000;
+	height: 40px;
+	width: 95%;
+	outline: none;
+	box-shadow: none;
+}
+
+.floating-label-group {
+	position: relative;
+	margin-top: 15px;
+
+	.floating-label {
+		font-size: 18px;
+		font-weight: 600;
+		color: #000;
+		position: absolute;
+		pointer-events: none;
+		top: 9px;
+		left: 12px;
+		transition: all 0.1s ease;
+	}
+
+	input:focus~.floating-label,
+	input:not(:focus):valid~.floating-label {
+		top: -22px;
+		bottom: 0px;
+		left: 0px;
+		font-size: 13px;
+		opacity: 1;
+		color: #000;
+		font-weight: 600;
+	}
+}
+
+.button {
+	background-color: #117BA3;
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	width: 100%;
+	margin-top: 15px;
+	height: 40px;
+}
