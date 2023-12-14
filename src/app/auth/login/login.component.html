@@ -1,18 +1,30 @@
 <div class="row header-text m-2 p-2">
     <span>Login</span>
 </div>
-<div class="row m-3">
-    <div class="col-12 g-0 floating-label-group">
-        <input type="number" required />
-        <label class="floating-label">Mobile</label>
+<div [formGroup]="loginForm">
+    <div class="row m-3">
+        <div class="col-12 g-0 floating-label-group">
+            <input formControlName="mobile" type="number" required />
+            <label class="floating-label">Mobile</label>
+            <div *ngFor="let error of errorMessages.mobile">
+                <ng-container *ngIf="mobile.hasError(error.type) && (mobile.touched)">
+                    <small class="error-message">{{error.message}}</small>
+                </ng-container>
+            </div>
+        </div>
     </div>
-</div>
-<div class="row m-3">
-    <div class="col-8 g-0 floating-label-group">
-        <input type="password" required />
-        <label class="floating-label">Password</label>
-    </div>
-    <div class="col-4">
-        <button class="button">Login</button>
+    <div class="row m-3">
+        <div class="col-8 g-0 floating-label-group">
+            <input formControlName="password" type="password" required />
+            <div *ngFor="let error of errorMessages.mobile">
+                <ng-container *ngIf="mobile.hasError(error.type) && (mobile.touched)">
+                    <small class="error-message">{{error.message}}</small>
+                </ng-container>
+            </div>
+            <label class="floating-label">Password</label>
+        </div>
+        <div class="col-4">
+            <button type="submit" class="button" (click)="login()">Login</button>
+        </div>
     </div>
 </div>

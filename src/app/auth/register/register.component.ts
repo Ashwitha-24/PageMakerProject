@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'register',
@@ -21,10 +22,19 @@ export class RegisterComponent {
   public errorMessages = {
     email :[{ type:'required',message:'Email is required'},{ type:'pattern',message:'Enter valid Mail'}], 
     mobile :[{ type:'required',message:'Number is requied'},{ type:'pattern',message:'Enter valid Phone number'}],
+    password :[{ type:'required',message:'Password is required'},{ type:'minlength',message:'Minimum six Characters required'}],
   }
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private router: Router) {
   }
 
-
+  /** Register User */
+  register() {
+    this.registerForm.markAllAsTouched();
+    if (this.registerForm.valid) {
+      this.router.navigate(['home'])
+    }
+  }
 }

@@ -1,32 +1,39 @@
 <div class="row header-text m-2 p-2">
     <span>Create New Account</span>
 </div>
-<div class="row m-3">
-    <div class="col-6 g-0 floating-label-group">
-        <input formControlName="mobile" type="number" required />
-        <label class="floating-label">Mobile</label>
-        <div *ngFor="let error of errorMessages.mobile">
-            <ng-container *ngIf="mobile.hasError(error.type) && (mobile.touched)">
-                <small class="error-message">{{error.message}}</small>
-            </ng-container>
+<div [formGroup]="registerForm" (submit)="register()">
+    <div class="row m-3">
+        <div class="col-6 g-0 floating-label-group">
+            <input formControlName="mobile" type="number" required />
+            <label class="floating-label">Mobile</label>
+            <div *ngFor="let error of errorMessages.mobile">
+                <ng-container *ngIf="mobile.hasError(error.type) && (mobile.touched)">
+                    <small class="error-message">{{error.message}}</small>
+                </ng-container>
+            </div>
+        </div>
+        <div class="col-6 g-0 floating-label-group">
+            <input formControlName="email" type="email" required />
+            <label class="floating-label">Email</label>
+            <div *ngFor="let error of errorMessages.email">
+                <ng-container *ngIf="email.hasError(error.type) && (email.touched)">
+                    <small class="error-message">{{error.message}}</small>
+                </ng-container>
+            </div>
         </div>
     </div>
-    <div class="col-6 g-0 floating-label-group">
-        <input formControlName="email" type="email" required />
-        <label class="floating-label">Email</label>
-        <div *ngFor="let error of errorMessages.email">
-            <ng-container *ngIf="email.hasError(error.type) && (email.touched)">
-                <small class="error-message">{{error.message}}</small>
-            </ng-container>
+    <div class="row m-3">
+        <div class="col-8 g-0 floating-label-group">
+            <input formControlName="password" type="password" required />
+            <label class="floating-label">Password (EX.432434)</label>
+            <div *ngFor="let error of errorMessages.password">
+                <ng-container *ngIf="password.hasError(error.type) && (password.touched)">
+                    <small class="error-message">{{error.message}}</small>
+                </ng-container>
+            </div>
         </div>
-    </div>
-</div>
-<div class="row m-3">
-    <div class="col-8 g-0 floating-label-group">
-        <input type="password" required />
-        <label class="floating-label">Password (EX.432434)</label>
-    </div>
-    <div class="col-4">
-        <button class="button">Register</button>
+        <div class="col-4">
+            <button type="submit" class="button" (click)="register()">Register</button>
+        </div>
     </div>
 </div>
