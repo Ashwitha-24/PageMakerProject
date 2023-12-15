@@ -6,6 +6,7 @@
         text-decoration: none;
         margin: 0px;
         padding: 5px;
+        cursor: pointer;
     }
 
     .valid-pan {
@@ -33,4 +34,8 @@
     height: 130px;
     cursor: pointer;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1), 0 2px 8px 0 rgba(0, 0, 0, 0.11);
+
+    img {
+        height: 70px;
+    }
 }

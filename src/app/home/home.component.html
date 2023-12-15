@@ -5,15 +5,15 @@
     <div class="col-6">
         <div class="d-flex justify-content-center">
             <div class="m-2">
-                <div class="mid-header-action">
+                <div class="mid-header-action" (click)="profile()">
                     <i class="fas fa-user"></i>
-                    <span>Profile</span>
+                    <span class="p-1">Profile</span>
                 </div>
             </div>
             <div class="m-2">
-                <div class="mid-header-action">
+                <div class="mid-header-action" (click)="this.router.navigate(['login'])">
                     <i class="fas fa-sign-out-alt"></i>
-                    <span>Logout</span>
+                    <span class="p-1">Logout</span>
                 </div>
             </div>
         </div>
@@ -29,10 +29,19 @@
         <marquee >We are continuously working on this application. you will get the update in a few days.           We are continuously working on this application. you will get the update in a few days.</marquee>
     </div>
 </div>
-<div class="row">
+<div class="row mt-4">
     <div class="listing">
+        <div class="col-9 m-4 d-flex">
+            <div class="">
+                <img src="assets/advertise/listing_image.png"/>
+            </div>
+            <div class="">
+                <span>Epaper 1</span>
+                <span>Created on 2023-11-04</span>
+            </div>
+        </div>
         <div class="col-3">
-            
+
         </div>
     </div>
 </div>

@@ -16,8 +16,8 @@
     <div class="row m-3">
         <div class="col-8 g-0 floating-label-group">
             <input formControlName="password" type="password" required />
-            <div *ngFor="let error of errorMessages.mobile">
-                <ng-container *ngIf="mobile.hasError(error.type) && (mobile.touched)">
+            <div *ngFor="let error of errorMessages.password">
+                <ng-container *ngIf="password.hasError(error.type) && (password.touched)">
                     <small class="error-message">{{error.message}}</small>
                 </ng-container>
             </div>
