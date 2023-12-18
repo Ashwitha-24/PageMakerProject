@@ -9,14 +9,18 @@ export class PaperEditorComponent {
   title = 'pagemaker';
   headerImage: any;
   sectionName: any
+  headerDetails: any;
+  selectImage: boolean = false;
+  
+  // Image Urls
+  subi = "subi.png";
   headerImagePrefix = "assets/front_page_header/";
   advertiseImagePrefix = "assets/advertise/"
   gandhijiImage = "gandhiji.png";
   advertise_520_260 = "advertise_520_260.png";
   newspaper_dummy_header = "newspaper_dummy_header.png";
-  subi = "subi.png";
-  headerDetails: any;
-  selectImage: boolean = false;
+  header_5_right_image = "header_5_right.png";
+  konark_image = "konark.jpg";
 
   section(sectionName: any = null) {
     this.sectionName = sectionName;

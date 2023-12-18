@@ -30,19 +30,47 @@ export class CustomHeaderComponent {
     {
       'image': 'header_3.png',
       'editType': 'text_edit',
-      'html': '<div class=row><div class=col-12><div class=mt-4><span class="d-flex justify-content-center fw-bold fs-1 lh-1">Channel Name</span><span class="d-flex justify-content-center mt-1">इंदरगढ़ > दतिया > ग्वालियर > भिंड > मोरेना </span></div></div></div>'
+      'id': 'header_3'
     },
     {
       'image': 'header_4.png',
-      'editType': 'text_edit'
+      'editType': 'text_edit',
+      'id': 'header_4'
     },
     {
       'image': 'header_5.png',
-      'editType': 'text_edit'
+      'editType': 'text_edit',
+      'id': 'header_5'
     },
     {
       'image': 'header_6.png',
-      'editType': 'text_edit'
+      'editType': 'text_edit',
+      'id': 'header_6'
+    },
+    {
+      'image': 'header_7.png',
+      'editType': 'text_edit',
+      'id': 'header_7'
+    },
+    {
+      'image': 'header_8.png',
+      'editType': 'text_edit',
+      'id': 'header_8'
+    },
+    {
+      'image': 'header_9.png',
+      'editType': 'text_edit',
+      'id': 'header_9'
+    },
+    {
+      'image': 'header_10.png',
+      'editType': 'text_edit',
+      'id': 'header_10'
+    },
+    {
+      'image': 'header_11.png',
+      'editType': 'text_edit',
+      'id': 'header_11'
     }
   ];
 
