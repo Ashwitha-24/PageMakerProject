@@ -8,6 +8,8 @@
               style="height: 80px; width: 100%;">
           </div>
         </div>
+        
+        <!-- Header 1 -->
         <div class="row g-0" *ngIf="headerDetails && headerDetails.id=='header_1'">
           <div class="col-2">
             <img class="img-fluid" [src]="advertiseImagePrefix + advertise_520_260" style="height: 80px;">
@@ -20,6 +22,8 @@
             <img class="img-fluid" [src]="advertiseImagePrefix + advertise_520_260" style="height: 80px;">
           </div>
         </div>
+
+        <!-- Header 2 -->
         <div class="row g-0" *ngIf="headerDetails && headerDetails.id=='header_2'">
           <div class="col-8">
             <img class="img-fluid" [src]="advertiseImagePrefix + newspaper_dummy_header"
@@ -29,6 +33,8 @@
             <img class="img-fluid" [src]="advertiseImagePrefix + advertise_520_260" style="height: 80px;">
           </div>
         </div>
+
+        <!-- Header 3 -->
         <div class="row g-0" *ngIf="headerDetails && headerDetails.id=='header_3'">
           <div class=row>
             <div class=col-12>
@@ -37,6 +43,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Header 4 -->
         <div class="row g-0 align-items-center" *ngIf="headerDetails && headerDetails.id=='header_4'">
           <div class="col-3 d-flex justify-content-center">
             <img class="img-fluid" [src]="headerImagePrefix + gandhijiImage" style="height: 80px;">
@@ -51,6 +59,8 @@
 
           </div>
         </div>
+
+        <!-- Header 5 -->
         <div class="row g-0 mt-2" *ngIf="headerDetails && headerDetails.id=='header_5'">
           <div class="col-2">
             <img class="img-fluid" [src]="headerImagePrefix + konark_image" style="height: 80px; width: 100%;">
@@ -67,7 +77,8 @@
             <img class="img-fluid" [src]="headerImagePrefix + header_5_right_image" style="height: 80px; width: 100%;">
           </div>
         </div>
-        
+
+        <!-- Header 6 -->
         <div *ngIf="headerDetails && headerDetails.id=='header_6'">
           <div class="row g-0" style="background-color: brown;   text-align: center; color: #fff;   padding: 2px;   font-family: 'Akshar', sans-serif;   font-size: 12px;">
             <span>
@@ -83,6 +94,95 @@
             </div>
             <div class="col-4">
 
+            </div>
+          </div>
+        </div>
+
+        <!-- Header 7 -->
+        <div class="row g-0 m-2 align-items-center" *ngIf="headerDetails && headerDetails.id=='header_7'">
+          <div class="col-2 fw-bold" style="text-align: left;
+          font-family: 'Akshar', sans-serif;
+          font-size: 12px;">
+            <div>
+              पेज संख्या : 01
+            </div>
+            <div>
+              मूल्य  : 02/-
+            </div>
+            <div>
+              Monday
+            </div>
+            <div>
+              18th  December 2023 
+            </div>
+          </div>
+          <div class="col-8">
+            <span class="d-flex justify-content-center fw-bold fs-1 lh-1 text-nowrap text-danger">Channel Name</span>
+            <span class="d-flex justify-content-center mt-1">
+              इंदरगढ़ &gt; दतिया &gt; ग्वालियर &gt; भिंड &gt; मोरेना
+            </span>
+          </div>
+          <div class="col-2">
+            <div style="border: 1px solid #000;
+            border-radius: 5px;
+            padding: 4px;">
+            <div style="color: #000;
+            font-family: 'Akshar', sans-serif;
+            text-align: center;
+            font-size: 10px;">
+            <div>
+              सुविचार - 
+            </div>
+            <div style="text-align: center;
+            font-family: 'Akshar', sans-serif;
+            font-weight: normal;
+            font-size: 8px;
+            line-height: 1.4;">
+              समय का उत्तम उपयोग करना सीखें क्योंकि विश्व के ज्यादातर सफल मनुष्यों ने इसी का प्रयोग किया है। 
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header 8 -->
+        <div *ngIf="headerDetails && headerDetails.id=='header_8'">
+          <div class="row g-0" style="background-color: black;   text-align: center; color: #fff;   padding: 2px;   font-family: 'Akshar', sans-serif;   font-size: 7px;">
+            <span>
+              समय का उत्तम उपयोग करना सीखें क्योंकि विश्व के ज्यादातर सफल मनुष्यों ने इसी का प्रयोग किया है।
+            </span>
+          </div>
+          <div class="row mt-2">
+            <div class="col-2">
+              <img class="img-fluid" [src]="headerImagePrefix + header_8_left_image" style="height: 80px;">
+            </div>
+            <div class="col-8">
+              <span class="d-flex justify-content-center fw-bold fs-1 lh-1 text-nowrap text-black" style="font-family: 'Bakbak One', cursive;">Channel Name</span>
+              <span class="d-flex justify-content-center mt-1">
+                इंदरगढ़ &gt; दतिया &gt; ग्वालियर &gt; भिंड &gt; मोरेना
+              </span>
+            </div>
+            <div class="col-2">
+              <img class="img-fluid" [src]="headerImagePrefix + header_8_right_image" style="height: 80px;">
+            </div>
+          </div>
+          <div class="row mt-2 g-0" style="
+          background-color: #000;
+          color: #fff;">
+            <div class="col-4">
+              <span style="font-size: 9px;
+              color: #fff;
+              text-align: left;">email: ak.samuel66@gmail.com </span>
+            </div>
+            <div class="col-4">
+              <span style="font-size: 9px;
+              color: #fff;
+              text-align: center;">RNI - XXXXXXXXX</span>
+            </div>
+            <div class="col-4">
+              <span style="font-size: 9px;
+              color: #fff;
+              text-align: right;"> www.www.mywebsite.com</span>
             </div>
           </div>
         </div>

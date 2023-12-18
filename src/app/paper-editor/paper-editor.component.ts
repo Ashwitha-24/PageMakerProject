@@ -21,6 +21,8 @@ export class PaperEditorComponent {
   newspaper_dummy_header = "newspaper_dummy_header.png";
   header_5_right_image = "header_5_right.png";
   konark_image = "konark.jpg";
+  header_8_left_image = "header_8_left.png";
+  header_8_right_image = "header_8_right.jpg";
 
   section(sectionName: any = null) {
     this.sectionName = sectionName;
