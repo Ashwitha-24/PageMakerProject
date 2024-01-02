@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./custom-editor.component.scss']
 })
 export class CustomEditorComponent {
+
   enableEditor: boolean = false;
+  defaultFontSize: number = 45;
+  defaultLineHeight: number = 0.9;
 }

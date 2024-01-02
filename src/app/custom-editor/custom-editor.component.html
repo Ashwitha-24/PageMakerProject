@@ -1,3 +1,18 @@
 <div *ngIf="!enableEditor">
     <span class="fw-bold d-flex justify-content-center text-danger p-2">Select any text to edit</span>
 </div>
+<div *ngIf="!enableEditor" class="p-1">
+    <div class="editor_layout">
+        <div class="manage_font">
+            <img src="assets/edit_images/font_increase.png">
+            <div class="">
+                <span>-</span>
+                <span>{{defaultFontSize}}</span>
+                <span>+</span>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</div>
